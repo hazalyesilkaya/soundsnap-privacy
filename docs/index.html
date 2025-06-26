@@ -38,9 +38,11 @@
     padding-bottom: 0.5rem;
   }
 
-  header hr + section {
-    margin-top: 0;
-  }
+/* style bloğunuza ekleyin: */
+main > section:first-of-type {
+  /* Pico’nun margin-block-start’ını sıfırla */
+  margin-block-start: 0 !important;
+}
 
 
   /* Ana içerik top padding’i azalt */
