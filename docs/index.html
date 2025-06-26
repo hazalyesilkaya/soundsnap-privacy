@@ -4,59 +4,58 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Soundsnap Gizlilik Politikası</title>
-  <!-- Pico.css ile hızlı, şık bir görünüm -->
+  <!-- Pico.css -->
   <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
-<style>
-  /* (önceki stiliniz burada) */
-
-  /* Pico’nun varsayılan aralıklarını azaltıyoruz */
-  :root {
-    --content-spacing: 0.5rem;    /* section’lar arası mesafe */
-    --flow-space: 0.5rem;         /* paragraf / başlık arası mesafe */
-  }
-
-  /* Başlıkların üst ve alt boşluklarını sıkılaştır */
-  h1, h2, h3, h4, h5, h6 {
-    margin-top: 0.75rem;
-    margin-bottom: 0.5rem;
-  }
-
-  /* Paragrafları ve listeleri birbirine yaklaştır */
-  p, ul, ol {
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
-  }
-
-  /* Section’lar arası mesafeyi azalt */
-  section + section {
-    margin-top: var(--content-spacing);
-  }
-
-  /* Header ve footer arasındaki boşluğu azalt */
-  header, footer {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  /* Ana içerik top padding’i azalt */
-  main {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-  
-    header + main {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-
-  /* Görsel ayrım çizgisi (hr) yüksekliğini ve margin’ini sıkılaştır */
-  hr {
-    margin: 0.75rem 0;
-    height: 1px;
-  }
-</style>
-
+  <style>
+    /* Ana container daraltması */
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    /* Header ayarları */
+    header {
+      margin-bottom: 0;
+      padding-bottom: 0.5rem;
+    }
+    header hr {
+      margin: 0.3rem 0;
+    }
+    /* Başlık altı metin */
+    header p small {
+      display: block;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    /* Main içindeki section aralıkları küçültülsün */
+    main section {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      padding: 0;
+    }
+    main h2 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+    main p, main ul {
+      margin-top: 0;
+      margin-bottom: 0.8rem;
+      line-height: 1.5;
+    }
+    main ul {
+      padding-left: 1.2rem;
+    }
+    /* Footer daraltma */
+    footer {
+      padding-top: 0.5rem;
+      padding-bottom: 1rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
 
@@ -70,47 +69,25 @@
     <section>
       <h2>Açıklama</h2>
       <p>
-        Soundsnap, kameradan aldığı video içindeki sesi kaydedip yapay zekâ ile 
-        farklı bir ses modeline dönüştüren bir uygulamadır. Hiçbir kişisel veri 
-        arka planda saklanmaz; tüm işlemler kullanıcı isteğiyle gerçekleştirilir.
+        Bu uygulama, kullanıcı kamerasından alınan video ve ses verisini 
+        yapay zeka ile işleyerek başka bir sesle entegre eder. Hiçbir 
+        kişisel veri kaydedilmez.
       </p>
-    </section>
-
-    <section>
-      <h2>Özellikler</h2>
-      <ul>
-        <li>Video içi sesi yakalama ve dönüştürme</li>
-        <li>Text-to-Speech ve Speech-to-Speech (Voice Cloning)</li>
-        <li>Flash destekli kayıt modu</li>
-        <li>Yapay zekâ tabanlı ses entegrasyonu</li>
-      </ul>
     </section>
 
     <section>
       <h2>Toplanan Veriler</h2>
       <ul>
-        <li>Sadece kullanıcı onayıyla alınan kamera ve mikrofon verisi</li>
-        <li>Ham veriler diskte saklanmaz, işlem sonrasında silinir</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Gerekli İzinler</h2>
-      <ul>
-        <li><strong>Kamera</strong> (`android.permission.CAMERA`): Video kaydı için</li>
-        <li><strong>Mikrofon</strong> (`android.permission.RECORD_AUDIO`): Ses kaydı için</li>
-        <li><strong>Depolama</strong> (`READ/WRITE_EXTERNAL_STORAGE`): Geçici dosyalar için</li>
-        <li><strong>Flash</strong> (`android.permission.FLASHLIGHT`): Karanlık ortamlarda kayıt için</li>
-        <li><strong>Faturalandırma</strong> (`com.android.vending.BILLING`): Uygulama içi satın alma</li>
-        <li><strong>İnternet</strong> (`android.permission.INTERNET`): Yapay zekâ API iletişimi</li>
+        <li>Kullanıcının çektiği video ve ses, sadece anlık işleme için kullanılır.</li>
+        <li>Uygulama hiçbir zaman kameradan alınan ham verileri diske kaydetmez.</li>
       </ul>
     </section>
 
     <section>
       <h2>Üçüncü Taraf Hizmetleri</h2>
       <p>
-        Ses dönüştürme çağrıları güvenli <strong>HTTPS</strong> bağlantıları üzerinden 
-        yapılır. Hiçbir kişisel veri üçüncü taraflarla paylaşılmaz.
+        Yapay zeka modeli çağrıları <strong>HTTPS</strong> üzerinden yapılır.
+        Üçüncü taraf sunucularında hiçbir kişisel veri saklanmaz.
       </p>
     </section>
 
@@ -121,8 +98,7 @@
   </main>
 
   <footer>
-    <hr>
-    <p>&copy; 2025 ZGEN Teknoloji San. ve Tic. Ltd. Şti.</p>
+    &copy; 2025 ZGEN Teknoloji San. ve Tic. Ltd. Şti.
   </footer>
 
 </body>
