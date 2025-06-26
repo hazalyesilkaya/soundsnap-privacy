@@ -21,6 +21,6 @@
   <h2>Üçüncü Taraf Hizmetleri</h2>
   <p>Yapay zeka modeli çağrıları güvenli bir HTTPS kanalı üzerinden yapılır. Üçüncü taraf sunucularında hiçbir kişisel veri saklanmaz.</p>
   <h2>İletişim</h2>
-  <p>Herhangi bir soru için: <a href="mailto:privacy@soundsnap.com">privacy@soundsnap.com</a></p>
+  <p>Herhangi bir soru için: <a href="mailto:admin@zgen.com.tr">privacy@soundsnap.com</a></p>
 </body>
 </html>
